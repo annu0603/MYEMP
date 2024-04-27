@@ -89,5 +89,5 @@ def view_employee(email):
     return render_template('view_employee.html', employee=employee)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=8000)
 
