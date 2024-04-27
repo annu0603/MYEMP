@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ employee[1] }} {{ employee[2] }}</title> <!-- Concatenate first name and last name for the title -->
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://st2.depositphotos.com/1757635/8830/i/450/depositphotos_88302772-stock-photo-global-business-strategy.jpg'); /* Replace 'background_image_url_here' with the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333; /* Title text color */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: #333; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ employee[1] }} {{ employee[2] }} Details</h1> <!-- Concatenate first name and last name for the title -->
+        <p><strong>First Name:</strong> {{ employee[1] }}</p>
+        <p><strong>Last Name:</strong> {{ employee[2] }}</p>
+        <p><strong>Email:</strong> {{ employee[3] }}</p>
+        <p><strong>Job:</strong> {{ employee[5] }}</p>
+        <p><strong>Department:</strong> {{ employee[6] }}</p>
+        <p><strong>Salary:</strong> {{ employee[7] }}</p>
+        <p><strong>Phone:</strong> {{ employee[8] }}</p>
+    </div>
+</body>
+</html>
